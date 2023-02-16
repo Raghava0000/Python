@@ -1,0 +1,139 @@
+# print(dir(list))
+
+# list methods:-['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+# adding methods:
+    # 1)append
+    # 2)extend
+    # 3)insert
+
+# removal methods:
+    # 1)index
+    # 2)count
+
+# altering methods:
+    # 1)copy
+    # 2)reverse
+    # 3)sort
+
+#1)append():-adding the single element into the list
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# list1.append(101)       
+# print(list1)
+
+# list1.append([11,12,13])
+# print(list1)
+
+
+# 2)extend():-its adding multiple elements at a time
+# numbers cant be used at extend
+
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# list1.extend([41,42,43])
+# print(list1)
+
+# list1.extend("django")
+# print(list1)
+
+
+# 3)insert():-its also same as append while can add only 1 element at a time but will add specific index value
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# list1.insert(98,99)
+# print(list1)
+
+
+# remove():-it will remove the the specified element from the list
+
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# list1.remove(12)
+# print(list1)
+
+# pop():-it will also remove the element from the list but using index value
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# list1.pop(2)
+# print(list1)
+
+
+# clear():-it will remove the all the element from the list and make it as empty
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# list1.clear()
+# print(list1)
+
+
+# removal methods:
+# 1)index():-will rwturn the index value of the element inside the list 
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# print(list1.index('shabbu'))
+# print(list1.index(4))
+
+# 2)count():-will return how many times a particular element is repeated inside the list
+# list1=[12,45,'raghava',78,'shabbu',4] 
+# print(list1.count('shabbu'))
+
+
+# altering methods:
+# 1)sort():-its sorting the elements inside the list into order eithe ascending or descending order
+# note:-while performing sort, element inside the list should be of same datatype only
+# list=[12,54,63,85,7,41,63,82,43,19,74]
+# print(list)
+# list.sort()
+# print(list) 
+
+# list.sort(reverse=True)
+# print(list)
+
+
+# 2)reverse():-it will reverse the inside the element
+# list=[12,54,63,85,7,41,63,82,43,19,74]
+# print(list)
+# list.reverse()
+# print(list)
+
+
+# 3)copy():-we are assigning the memory allocation of one list to another list
+# list=[7,41,63,82,43,19,74]      
+# list1=[12,54,63,85,7,45,8]     
+
+# list1=list.copy()
+
+# list.append(4)
+
+# print(list)
+# print(list1)
+
+
+
+# eg:-
+# a=[12,45,78,23,6,89,4,94,52,20]
+# b=[]
+
+# for ele in a:
+#     b.append(ele+2)
+#     print(b)
+    
+# for ele in a:
+#     if ele%2==0:
+#         b.append(ele+2)
+#         print(b)
+#     else:
+#         b.append(ele+3)
+#     print(b) 
+
+
+
+
+# list comprehension:-most elegant way of creating the list
+
+# 1st syntax:
+# [expression:for ele in sequence]
+# a=[12,45,78,23,6,89,4,94,52,20]
+# b=[]
+
+# print(ele+2 for ele in a)
+
+# 2nd syntax:
+# print([ele+2 for ele in a  if ele%2==0])
+
+# 3rd syntax:
+# [expression if condition else expression for ele sequence]
+# data = print([ele+2==0 if ele%2==0 else ele+3 for ele in a])
