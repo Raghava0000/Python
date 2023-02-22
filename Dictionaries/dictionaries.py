@@ -16,7 +16,7 @@
 
 
 # Dictionaries are mutable:
-dict1={"name":"raghava","mobile":"9638527410","email":"raghava@gmail.com","name":"shabbu","mobile":"7413218528"}
+# dict1={"name":"raghava","mobile":"9638527410","email":"raghava@gmail.com","name":"shabbu","mobile":"7413218528"}
 # dict1["city"]="Hyderarabad"
 # print(dict1)
 
