@@ -1,0 +1,42 @@
+GIT - Code Version Controller..
+
+# github.com
+# bitbucket.com
+# gitlab.com
+
+# 2 things are required 
+    # install of git..
+    # account creation on git..
+
+# Repository : Folder inside the git..
+
+    # Local Repository : Repository(Folder) in the local system.
+    # Remote Repository : Repository(Folder) on the git account..
+
+# git commands:
+    step1:
+        # git init -- Initialization of git..
+    step2:
+        git status -- to check the status of the git local Repository..
+
+    step3:
+        # adding the code to the local Repository..
+        git add file-name1 file-name2
+        git add .
+    
+    step4: 
+        # commiting your chnages to the local Repository..
+        git commit -m "sample message"
+        git commit -m "First Time Push"
+    
+    Step5:
+    If you are doing thee commit for the first time in the device, it will throw some credentials error. follow below commands
+        git config --global user.email "your-github-email"
+        git config --globla user.name "your-github-username"
+
+    Step6: Adding the remote Repository origin..
+        git remote add origin https://github.com/sanjeevareddy91/python-9am-2023-1.git
+
+    # Step7: Push the code to the Repository.
+        git push origin branch-name 
+        git push origin master
