@@ -158,8 +158,8 @@ import json
         # print(final_data)
 
 # with open('sample_new.json', 'w') as file_data:
-#     json.dump(final_data,file_data,indent=4)
+#     json.dump(final_data,file_data)
 
 # print((json.dumps(final_data,indent=4)))
 
-print(dir(json))
+# print(dir(json))

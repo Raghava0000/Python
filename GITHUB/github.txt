@@ -40,3 +40,21 @@ GIT - Code Version Controller..
     # Step7: Push the code to the Repository.
         git push origin branch-name 
         git push origin master
+
+    step8: taking the updated code from the remote Repository.
+         git checkout -b branch name
+         git checkout -b 1234 branch name
+
+    # revert back the changes you have mae in the local repository
+        git checkout file name--will remove changes you made on the particular branch
+        git checkout --this will remove all the changes
+
+    # cloning other repository code for the forst time
+        git clone repository-link
+        git clone .......link.........
+
+    # listing the branches
+        git branch
+
+
+    
