@@ -1,0 +1,59 @@
+Database :A Software or system to store the information.
+
+>>> Databases are 2 types :
+    > SQL(sequel) : mysql,postgres,sqlite,mssql.
+    > NoSQL(non sequel database) :mangoDB,cassandra,Hbase..
+
+>>> CRUD operations : Create Retrieve Update Delete.
+
+>>> installation:
+    > MYSQL workbench
+    > MYSQL (Xampp)
+
+>>> step1 : connect to the database first.
+    >> mysql -u root -p
+    >> it will ask for the password. By dafault it will be empty.
+    >> if you set any password, you have to provide that password.
+
+
+>>> step2 : list of databases.
+    >> show databases;
+
+
+>>> step3 : creating the new database.
+    >> create database database-name;
+    >> create database python_classes;
+
+
+>>> step4 : select the perticular database.
+    >> use database-name;
+    >> use python_classes;
+
+
+>>> step5 : list the tables in the database.
+    >> show tables;
+
+
+>>> step6 : creating the table.
+    >> create table table-name (column1name datatype, column2name data);
+    >> create table player_info(name varchar(25),ipl_team varchar(20),bid_amount integer(9),strike_rate FLOAT);
+
+
+>>> step7 : structure or discription of the table.
+    >> desc table-name;
+    >> desc player_info;
+
+
+>>> step8 : inserting the data into the table.
+    >> insert into table-name(column1, column2), values(value1, value2);
+    >> insert into player_info(name,ipl_team, bid_amount, strike_rate) values('msdhoni','csk',150000000,160);
+
+
+>>> step9 : Retrieve the data.
+    >> select * from table-name;
+    >> select * from player_info;
+    >> select * from player_info where ipl_team='csk';
+    >> select * from player_info where bid_amount='1500000000';
+
+
+    
